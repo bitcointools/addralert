@@ -21,11 +21,11 @@ def subp_call(cmdline):
  return stdout_text.strip() 
 
 # your email credentials (uses TLS, port 587)
-myemailserver='<email server>' 
-myemaillogin='<login>' 
-myemailpasswd='<passwd>'
-myemailfrom='<email addr from>'
-myemailto='<email addr to>'
+myemailserver='<email server>'  #smtp email server, e.g. smtp.gmail.com
+myemaillogin='<login>' #your email server login, usually your email address
+myemailpasswd='<passwd>' #password for email server login  
+myemailfrom='<email addr from>' #your e-mail address
+myemailto='<email addr to>' #the e-mail address you want to send the alert (can be your email address) 
 
 
 parser = argparse.ArgumentParser()
